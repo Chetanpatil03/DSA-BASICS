@@ -34,10 +34,21 @@ void insert(int a[]){
     }
 
     a[pos] = ele;
-    n++;
-    
+    n++; 
+}
 
-    
+void del(int a[]){
+    int pos,j;
+    cout<<"\nEnter position : ";
+    cin>>pos;
+    cout<<"Element : "<<a[pos];
+    j=pos;
+    while (j < n)
+    {
+        a[j] = a[j+1];
+        j++;
+    }
+    n--;
 }
 
 int main()
@@ -48,5 +59,7 @@ int main()
     get(a);
     dis(a);
     insert(a);
+    dis(a);
+    del(a);
     dis(a);
 }
