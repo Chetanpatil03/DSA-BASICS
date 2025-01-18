@@ -31,7 +31,7 @@ void Display(int a[],int n)
 
 int main()
 {
-    int arr[]={10,65,17,59,8,58,6,9,4};
+    int arr[]={10,65,63,52,62,11,3,1,9,16};
     int n= sizeof(arr)/sizeof(int);
 
     cout<<"\nBefore Swapping :";
