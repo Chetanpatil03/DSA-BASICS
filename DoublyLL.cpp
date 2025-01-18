@@ -127,7 +127,7 @@ void Node::f_dis()
     {
         temp = head;
         cout<<"\nList Elements are : ";
-        while (temp->right !=NULL)
+        while (temp !=NULL)
         {
             cout<<"\t"<<temp->data;
             temp = temp->right;
