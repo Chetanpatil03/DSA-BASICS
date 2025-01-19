@@ -29,7 +29,7 @@ void Node::Insert()
         temp=head;
         while (temp->link != NULL)
         {
-            temp = temp->link 
+            temp = temp->link;
         }
         temp->link = newNode;
     }

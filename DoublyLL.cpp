@@ -127,7 +127,7 @@ void Node::f_dis()
     {
         temp = head;
         cout<<"\nList Elements are : ";
-        while (temp->right !=NULL)
+        while (temp !=NULL)
         {
             cout<<"\t"<<temp->data;
             temp = temp->right;
@@ -147,14 +147,17 @@ void Node::r_dis()
 
         while (temp->right !=NULL)
         {
+            // cout<<temp->data;
             temp = temp->right;
+            
         }
 
         cout<<"\nList Elements are : ";
-        while (temp != NULL)
+        Node *n = temp;
+        while (n != nullptr)
         {
-            cout<<"\t"<<temp->data;
-            temp = temp->left;
+            cout<<"\t"<<n->data;
+            n = n->left;
         }
     }   
 }
