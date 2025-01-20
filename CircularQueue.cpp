@@ -9,43 +9,43 @@ class Queue
             void del();
             void dis();
     Queue(){
-        f=r=0;
+        f=r=-1;
     }
 };
 
 void Queue::ins()
 {
     int ele;
-    if(r == n)
+    if(((r+1)%n) == f)
     {
         cout<<"Queue is overflow";
     }
     else
     {
-        if (f==0)
+        if (f==-1)
         {
-            f=1;
+            f=0;
         }
         cout<<"\nEnter element : ";
         cin>>ele;
-        r=r+1;
+        r=(r+1)%n;
         q[r] = ele;   
     }
 }
 
 void Queue::del()
 {
-    if(f==0){
+    if(f==-1){
         cout<<"Queue is underflow";
     }
     else{
         int ele;
         ele = q[f];
-        f=f+1;
+        f=(f+1)%n;
         cout<<"Deleted element is : "<<ele;
         if (f==r)   
         {
-            f=r=0;
+            f=r=-1;
         }
     }
 }
