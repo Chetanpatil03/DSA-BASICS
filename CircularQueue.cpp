@@ -52,17 +52,7 @@ void Queue::del()
 
 void Queue::dis()
 {
-    if(f <= 0){
-        cout<<"\nQueue is Empty";
-    }
-    else
-    {
-        cout<<"\nQueue elements are :";
-        for (int i = r; i >= f; i--)
-        {
-            cout<<"\t"<<q[i];
-        }
-    }
+    
     
 }
 
